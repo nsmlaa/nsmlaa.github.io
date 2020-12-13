@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FRUIT MATH</title>
+	<link rel="shortcut icon" href="watermelon.png" type="image/png">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+
+			}
+
+		#home {
+		width: 1394px;
+		height: 766px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('home.jpg');
+		background-size: 1394px 766px;
+
+		}
+
+		#start {
+		background-image: url('start.png');
+		width: 347px;
+		height: 129px;
+		background-size: 348px 129px;
+		top: 57%;
+		left: 37%;
+		position: absolute;
+		border: none;
+		border-radius: 40px;	
+
+		}	
+
+		#start:hover {
+		background-image: url('start.png');
+		width: 347px;
+		height: 129px;
+		background-size: 348px 129px;
+		top: 57%;
+		left: 37%;
+		position: absolute;
+		border: none;
+		border-radius: 40px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+		}
+
+		#q1 {
+		width: 1394px;
+		height: 766px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('q1.jpg');
+		background-size: 1394px 766px;
+		display: none;
+
+		}
+
+		#orange1 {
+		background-image: url('orangefalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+		}	
+
+		#orange1:hover {
+		background-image: url('orangefalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+		}
+
+		#orange2 {
+		background-image: url('orangefalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+
+		}
+
+		#orange2:hover {
+		background-image: url('orangefalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+
+		}
+
+		#orange3 {
+		background-image: url('orangetrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+				}
+
+		#orange3:hover {
+		background-image: url('orangetrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+		}
+
+		#q1_true {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+			background-image: url('correct.jpg');
+			background-size: 1394px 766px;
+		}
+
+		#q1_false {
+		width: 1394px;
+		height: 766px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('wrong.jpg');
+		background-size: 1394px 766px;
+		display: none;
+
+		}
+
+		#orangecorrect {
+		background-image: url('next.png');
+		width: 207px;
+		height: 96px;
+		background-size: 207px 96px;
+		top: 57%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 24px;
+
+
+			}
+
+		#orangewrong {
+		background-image: url('tryagain.png');
+		width: 338px;
+		height: 96px;
+		background-size: 338px 96px;
+		top: 57%;
+		left: 39%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 28px;
+
+		}
+
+		#q2 {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			background-image: url('q2.jpg');
+			background-size: 1394px 766px;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		#water1 {
+		background-image: url('waterfalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+		}	
+
+		#water1:hover {
+		background-image: url('waterfalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+		}
+
+		#water2 {
+		background-image: url('watertrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+
+		}
+
+		#water2:hover {
+		background-image: url('watertrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+
+		}
+
+		#water3 {
+		background-image: url('waterfalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+				}
+
+		#water3:hover {
+		background-image: url('waterfalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+		}
+
+		#q2_true {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+			background-image: url('correct.jpg');
+			background-size: 1394px 766px;
+		}
+
+		#q2_false {
+		width: 1394px;
+		height: 766px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('wrong.jpg');
+		background-size: 1394px 766px;
+		display: none;
+
+		}
+
+		#watercorrect {
+		background-image: url('next.png');
+		width: 207px;
+		height: 96px;
+		background-size: 207px 96px;
+		top: 57%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 24px;
+
+
+			}
+
+		#waterwrong {
+		background-image: url('tryagain.png');
+		width: 338px;
+		height: 96px;
+		background-size: 338px 96px;
+		top: 57%;
+		left: 39%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 28px;
+		
+		}
+
+		#q3 {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			background-image: url('q3.jpg');
+			background-size: 1394px 766px;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		#coconut1 {
+		background-image: url('cocofalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+		}	
+
+		#coconut1:hover {
+		background-image: url('cocofalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+		}
+
+		#coconut2 {
+		background-image: url('cocotrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+
+		}
+
+		#coconut2:hover {
+		background-image: url('cocotrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+
+		}
+
+		#coconut3 {
+		background-image: url('cocofalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+				}
+
+		#coconut3:hover {
+		background-image: url('cocofalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+		}
+
+		#q3_true {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+			background-image: url('correct.jpg');
+			background-size: 1394px 766px;
+		}
+
+		#q3_false {
+		width: 1394px;
+		height: 766px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('wrong.jpg');
+		background-size: 1394px 766px;
+		display: none;
+
+		}
+
+		#coconutcorrect {
+		background-image: url('next.png');
+		width: 207px;
+		height: 96px;
+		background-size: 207px 96px;
+		top: 57%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 24px;
+
+
+		}
+
+		#coconutwrong {
+		background-image: url('tryagain.png');
+		width: 338px;
+		height: 96px;
+		background-size: 338px 96px;
+		top: 57%;
+		left: 39%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 28px;
+
+		}
+
+		#q4 {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			background-image: url('q4.jpg');
+			background-size: 1394px 766px;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		#pineapple1 {
+		background-image: url('pineapplefalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+		}	
+
+		#pineapple1:hover {
+		background-image: url('pineapplefalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+		}
+
+		#pineapple2 {
+		background-image: url('pineappletrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+
+		}
+
+		#pineapple2:hover {
+		background-image: url('pineappletrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+
+		}
+
+		#pineapple3 {
+		background-image: url('pineapplefalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+				}
+
+		#pineapple3:hover {
+		background-image: url('pineapplefalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+		}
+
+		#q4_true {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+			background-image: url('correct.jpg');
+			background-size: 1394px 766px;
+		}
+
+		#q4_false {
+		width: 1394px;
+		height: 766px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('wrong.jpg');
+		background-size: 1394px 766px;
+		display: none;
+
+		}
+
+		#pineapplecorrect {
+		background-image: url('next.png');
+		width: 207px;
+		height: 96px;
+		background-size: 207px 96px;
+		top: 57%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 24px;
+
+
+		}
+
+		#pineapplewrong {
+		background-image: url('tryagain.png');
+		width: 338px;
+		height: 96px;
+		background-size: 338px 96px;
+		top: 57%;
+		left: 39%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 28px;
+
+		}
+
+		#q5 {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			background-image: url('q5.jpg');
+			background-size: 1394px 766px;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		#banana1 {
+		background-image: url('bananatrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+		}	
+
+		#banana1:hover {
+		background-image: url('bananatrue.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 18%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+		}
+
+		#banana2 {
+		background-image: url('bananafalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+
+		}
+
+		#banana2:hover {
+		background-image: url('bananafalse1.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 43%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+
+
+		}
+
+		#banana3 {
+		background-image: url('bananafalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+
+				}
+
+		#banana3:hover {
+		background-image: url('bananafalse2.png');
+		width: 178px;
+		height: 84px;
+		background-size: 178px 84px;
+		top: 75%;
+		left: 70%;
+		position: absolute;
+		border: none;
+		border-radius: 23px;	
+		box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+
+		}
+
+		#q5_true {
+			width: 1394px;
+			height: 766px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+			background-image: url('thankyou.jpg');
+			background-size: 1394px 766px;
+		}
+
+		#q5_false {
+		width: 1394px;
+		height: 766px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url('wrong.jpg');
+		background-size: 1394px 766px;
+		display: none;
+
+		}
+
+		#bananacorrect {
+		background-image: url('playagain.png');
+		width: 374px;
+		height: 96px;
+		background-size: 374px 96px;
+		top: 83%;
+		left: 37%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 24px;
+
+
+		}
+
+		#bananawrong {
+		background-image: url('tryagain.png');
+		width: 338px;
+		height: 96px;
+		background-size: 338px 96px;
+		top: 57%;
+		left: 39%;
+		position: absolute;
+		border: none;
+		background-color: white;
+		border-radius: 28px;
+
+	}
+
+
+	#bgaud  {
+	opacity: 0;
+
+}
+
+	</style>
+</head>
+<body>
+<div id="home">
+		<button id="start" onclick="show('q1')"></button>
+		</div>
+
+	<div id="q1">
+		<button id="orange1" onclick="show('q1_false')"></button>
+		<button id="orange2" onclick="show('q1_false')"></button>
+		<button id="orange3" onclick="show('q1_true')"></button>
+	</div>
+	<div id="q1_true">
+		<button id="orangecorrect" onclick="show('q2')"></button>
+	</div>
+	<div id="q1_false">
+		<button id="orangewrong" onclick="show('q1')"></button>
+	</div>
+
+	<div id="q2">
+		<button id="water1" onclick="show('q2_false')"></button>
+		<button id="water2" onclick="show('q2_true')"></button>
+		<button id="water3" onclick="show('q2_false')"></button>
+	</div>
+	<div id="q2_true">
+		<button id="watercorrect" onclick="show('q3')"></button>
+	</div>
+	<div id="q2_false">
+		<button id="waterwrong" onclick="show('q2')"></button>
+	</div>
+
+	<div id="q3">
+		<button id="coconut1" onclick="show('q3_false')"></button>
+		<button id="coconut2" onclick="show('q3_true')"></button>
+		<button id="coconut3" onclick="show('q3_false')"></button>
+	</div>
+	<div id="q3_true">
+		<button id="coconutcorrect" onclick="show('q4')"></button>
+	</div>
+	<div id="q3_false">
+		<button id="coconutwrong" onclick="show('q3')"></button>
+	</div>
+
+	<div id="q4">
+		<button id="pineapple1" onclick="show('q4_false')"></button>
+		<button id="pineapple2" onclick="show('q4_true')"></button>
+		<button id="pineapple3" onclick="show('q4_false')"></button>
+	</div>
+	<div id="q4_true">
+		<button id="pineapplecorrect" onclick="show('q5')"></button>
+	</div>
+	<div id="q4_false">
+		<button id="pineapplewrong" onclick="show('q4')"></button>
+	</div>
+
+	<div id="q5">
+		<button id="banana1" onclick="show('q5_true')"></button>
+		<button id="banana2" onclick="show('q5_false')"></button>
+		<button id="banana3" onclick="show('q5_false')"></button>
+	</div>
+	<div id="q5_true">
+		<button id="bananacorrect" onclick="show('home')"></button>
+	</div>
+	<div id="q5_false">
+		<button id="bananawrong" onclick="show('q5')"></button>
+	</div>
+	
+
+<audio id="bgaud" controls>
+	  <source src="hawaii.ogg" type="audio/ogg">
+	  <source src="hawaii.mp3" type="audio/mpeg">
+	</audio>
+
+</body>
+</html>
+<script>
+function show(x) {
+	document.getElementById('q1').style.display = 'none';
+	document.getElementById('q1_true').style.display = 'none';
+	document.getElementById('q1_false').style.display = 'none';
+	document.getElementById('q2').style.display = 'none';
+	document.getElementById('q2_true').style.display = 'none';
+	document.getElementById('q2_false').style.display = 'none';
+	document.getElementById('q3').style.display = 'none';
+	document.getElementById('q3_true').style.display = 'none';
+	document.getElementById('q3_false').style.display = 'none';
+	document.getElementById('q4').style.display = 'none';
+	document.getElementById('q4_true').style.display = 'none';
+	document.getElementById('q4_false').style.display = 'none';
+	document.getElementById('q5').style.display = 'none';
+	document.getElementById('q5_true').style.display = 'none';
+	document.getElementById('q5_false').style.display = 'none';
+	document.getElementById('home').style.display = 'none';
+
+
+	document.getElementById(x).style.display = 'block';
+
+
+	var audio = document.getElementById("bgaud");
+		audio.play();
+}
+
+</script>
