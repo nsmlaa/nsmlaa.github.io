@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=1394px, initial-scale=1.0">
+	<title>Sounds of the Zoo</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="sealclick1.png" type="image/png">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		#main_scene {
+			width: 100%;
+			height: 100%;
+			position: fixed;top: 0;
+			left: 0;
+		}
+
+		#home {
+			width: 1400px;
+			height: 766px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 8s;
+			background-image: url('zoo1.jpg');
+			z-index: 9
+
+		}
+
+			#startbutton {
+			position: absolute;
+			top: 50%;
+			left: 37%;
+			width: 307px;
+			height: 106px;
+			background-image: url('startbutton2.png');
+		}
+
+		#startbutton:hover {
+			position: absolute;
+			top: 50%;
+			left: 37%;
+			width: 307px;
+			height: 106px;
+			background-image: url('startbutton2.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+
+		}
+
+
+				#elephant {
+			width: 1556px;
+			height: 766px;
+			position: absolute;
+			top: 0;
+			left: 1400px;
+			transition: all 8s;
+			background-image: url('zoo2.jpg');
+		
+		}
+
+		#elephantclick1 {
+			position: absolute;
+			top: 20%;
+			left: 30%;
+			width: 298px;
+			height: 461px;
+			background-image: url('elephantclick1.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+		}
+
+		
+		#elephantclick2 {
+			position: absolute;
+			top: 18%;
+			left: 30%;
+			width: 298px;
+			height: 452px;
+			background-image: url('elephantclick2.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+	
+
+  			}
+		#elephantclick3 {
+			position: absolute;
+			top: 20%;
+			left: 30%;
+			width: 314px;
+			height: 461px;
+			background-image: url('elephantclick3.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+  		}
+  			#elephant1 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 85%;
+			left: 40%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+
+  			}
+
+		#elephant2 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 85%;
+			left: 40%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+  			
+		
+		}
+
+		#elephant3 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 85%;
+			left: 36%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+
+  		}
+  
+  			#tiger {
+			width: 2811px;
+			height: 766px;
+			position: absolute;
+			top: 0;
+			left: 2956px;
+			transition: all 8s;
+			background-image: url('zoo3.jpg');
+		
+
+		
+		}
+
+		#tiger1 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 85%;
+			left: 65%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			
+		
+		}
+
+		#tiger2 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 85%;
+			left: 65%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+
+  			}
+
+		#tiger3 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 85%;
+			left: 62%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+
+  		}	
+		#tigerclick1 {
+			position: absolute;
+			top: 29%;
+			left: 60%;
+			width: 253px;
+			height: 392px;
+			background-image: url('tigerclick1.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+
+  			}
+
+			#tigerclick2 {
+			position: absolute;
+			top: 17%;
+			left: 73.5%;
+			width: 262px;
+			height: 307px;
+			background-image: url('tigerclick2.png');
+
+  			}
+		#tigerclick3 {
+			position: absolute;
+			top: 17%;
+			left: 73.5%;
+			width: 262px;
+			height: 307px;
+			background-image: url('tigerclick3.png');
+  			display: none;
+		
+
+
+  			}
+		#tigerclick4 {
+			position: absolute;
+			top: 29%;
+			left: 60%;
+			width: 253px;
+			height: 392px;
+			background-image: url('tigerclick4.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+		
+		}
+
+		#tigerclick5 {
+			position: absolute;
+			top: 29%;
+			left: 60%;
+			width: 253px;
+			height: 392px;
+			background-image: url('tigerclick5.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+
+  		}
+
+
+				#seal {
+			width: 1647px;
+			height: 766px;
+			position: absolute;
+			top: 0;
+			left: 1400px;
+			transition: all 8s;
+			background-image: url('zoo4.jpg');
+		
+		}
+
+		#sealclick1 {
+			position: absolute;
+			top: 6%;
+			left: 50%;
+			width: 316px;
+			height: 349px;
+			background-image: url('sealclick1.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+		}
+
+		
+		#sealclick2 {
+			position: absolute;
+			top: 30%;
+			left: 27%;
+			width: 229px;
+			height: 306px;
+			background-image: url('sealclick2.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+	
+
+  			}
+		#sealclick3 {
+			position: absolute;
+			top: 16%;
+			left: 49%;
+			width: 334px;
+			height: 271px;
+			background-image: url('sealclick3.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+  		}
+  			#seal1 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 83%;
+			left: 33%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+
+  			}
+
+		#seal2 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 83%;
+			left: 35%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+  			
+		
+		}
+
+		#seal3 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 83%;
+			left: 33%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+  		}
+  				#kookaburra {
+			width: 1793px;
+			height: 766px;
+			position: absolute;
+			top: 0;
+			left: 1393px;
+			transition: all 8s;
+			background-image: url('zoo5.jpg');
+			
+			}
+
+		#kookaburraclick1 {
+			position: absolute;
+			top: 10%;
+			left: 23%;
+			width: 565px;
+			height: 539px;
+			background-image: url('kookaburraclick1.png');
+		}
+
+		
+		#kookaburraclick2 {
+			position: absolute;
+			top: 10%;
+			left: 23%;
+			width: 565px;
+			height: 539px;
+			background-image: url('kookaburraclick2.png');
+  			display: none;
+	
+
+  			}
+		#kookaburraclick3 {
+			position: absolute;
+			top: 10%;
+			left: 60%;
+			width: 505px;
+			height: 787px;
+			background-image: url('kookaburraclick3.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+
+  			}
+		#kookaburraclick4 {
+			position: absolute;
+			top: 10%;
+			left: 60%;
+			width: 503px;
+			height: 763px;
+			background-image: url('kookaburraclick4.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+
+  		}
+
+  		#kookaburraclick5 {
+			position: absolute;
+			top: 10%;
+			left: 60%;
+			width: 505px;
+			height: 787px;
+			background-image: url('kookaburraclick3.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+
+
+  			}
+  			#kookaburra1 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 82%;
+			left: 32%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+
+  			}
+
+			#kookaburra2 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 82%;
+			left: 30%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+  			
+		
+		}
+
+			#kookaburra3 {  
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 82%;
+			left: 30%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+
+  		}
+
+  		#alpacca {
+			width: 1585px;
+			height: 766px;
+			position: absolute;
+			top: 0;
+			left: 1400px;
+			transition: all 8s;
+			background-image: url('zoo6.jpg');
+		
+		}
+
+		#alpaccaclick1 {
+			position: absolute;
+			top: 6%;
+			left: 69%;
+			width: 376px;
+			height: 585px;
+			background-image: url('alpaccaclick1.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+		}
+
+		
+		#alpaccaclick2 {
+			position: absolute;
+			top: 6%;
+			left: 63%;
+			width: 467px;
+			height: 581px;
+			background-image: url('alpaccaclick2.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			filter: drop-shadow(5px 5px 5px #FFFFFF);
+  			display: none;
+	
+
+  			}
+		#alpaccaclick3 {
+			position: absolute;
+			top: -2%;
+			left: 37%;
+			width: 960px;
+			height: 713px;
+			background-image: url('alpaccaclick3.png');
+			cursor: pointer;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+  		}
+  			#alpacca1 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 83%;
+			left: 33%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+
+  			}
+
+		#alpacca2 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 83%;
+			left: 35%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+  			
+		
+		}
+
+		#alpacca3 {
+			font-size: 30px;
+			color: white;
+			position: absolute;
+			top: 83%;
+			left: 33%;
+			text-align: center;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+  			filter: drop-shadow(5px 5px 5px #222);
+  			display: none;
+  		}
+
+		#elephantaudio1  {
+		opacity: 0;
+
+		}
+		#elephantaudio2  {
+		opacity: 0;
+
+		}
+
+		#elephantaudio3  {
+		opacity: 0;
+
+		}
+
+		#tigeraudio1  {
+		opacity: 0;
+
+		}
+		#tigeraudio2  {
+		opacity: 0;
+
+		}
+
+		#tigeraudio3  {
+		opacity: 0;
+
+		}
+
+		#sealaudio1  {
+		opacity: 0;
+
+		}
+		#sealaudio2  {
+		opacity: 0;
+
+		}
+
+		#sealaudio3  {
+		opacity: 0;
+
+		}
+
+		#kookaburraaudio1  {
+		opacity: 0;
+
+		}
+		#kookaburraaudio2  {
+		opacity: 0;
+
+		}
+
+		#kookaburraaudio3  {
+		opacity: 0;
+
+		}
+
+		#alpaccaaudio1  {
+		opacity: 0;
+
+		}
+		#alpaccaaudio2  {
+		opacity: 0;
+
+		}
+
+		#alpaccaaudio3  {
+		opacity: 0;
+
+
+
+}
+	</style>
+</head>
+<body>
+	<div id="main_scene">
+		<div id="home">
+			<div id="startbutton" onclick="start('startbutton')"></div>
+
+			<audio id="elephantaudio1" controls>
+	  <source src="elephantaudio1.ogg" type="audio/ogg">
+	  <source src="elephantaudio1.mp3" type="audio/mpeg">
+	  </audio>
+		</div>
+
+		<div id="elephant">
+			<div id="elephantclick1" onclick="next('elephantclick1')"></div>
+			<div id="elephantclick2" onclick="next1('elephantclick2')"></div>
+			<div id="elephantclick3"onclick="gototiger('elephantclick3')"></div>
+			<div id="elephant1">Today is a good day to be out and about,
+				<p>Avery couldn’t help but let out a shout. </div>
+			<div id="elephant2">It’s her first time to the Taronga zoo <p>
+							She’s excited to hear what animals can do.</div>
+			<div id="elephant3">From afar she could already hear the elephant’s 					TOOT! <p>
+							Jumping for joy, she ran inside in a scoot.</div>
+
+		
+	  	<audio id="elephantaudio2" controls>
+	  <source src="elephantaudio2.ogg" type="audio/ogg">
+	  <source src="elephantaudio2.mp3" type="audio/mpeg">
+	  </audio>
+
+	  	<audio id="elephantaudio3" controls>
+	  <source src="elephantaudio3.ogg" type="audio/ogg">
+	  <source src="elephantaudio3.mp3" type="audio/mpeg">
+	  </audio>
+
+	  <audio id="tigeraudio1" controls>
+	  <source src="tigeraudio1.ogg" type="audio/ogg">
+	  <source src="tigeraudio1.mp3" type="audio/mpeg">
+	  </audio>
+
+		</div>
+
+		<div id="tiger">
+			<div id="tigerclick1" onclick="next2('tigerclick1')"></div>
+			<div id="tigerclick5" onclick="next3('tigerclick5')"></div>
+			<div id="tigerclick4"onclick="gotoseal('tigerclick4')"></div>
+			<div id="tigerclick2" ></div>
+			<div id="tigerclick3" ></div>
+			<div id="tiger1">A short little trip to Wild Africa, <p>
+							And there she saw the striped mighty fella.</div>
+			<div id="tiger2">Standing strong and broad in a deep gaze, <p>
+								Avery stared back in awe and amaze.</div>
+
+			<div id="tiger3">To her surprise the majestic tiger let out a loud ROAR!<p>She covered her ears while the crowd clapped galore.</div>
+
+		
+	  	<audio id="tigeraudio2" controls>
+	  <source src="tigeraudio2.ogg" type="audio/ogg">
+	  <source src="tigeraudio2.mp3" type="audio/mpeg">
+	  </audio>
+
+	  	<audio id="tigeraudio3" controls>
+	  <source src="tigeraudio3.ogg" type="audio/ogg">
+	  <source src="tigeraudio3.mp3" type="audio/mpeg">
+	  </audio>
+
+	  <audio id="sealaudio1" controls>
+	  <source src="sealaudio1.ogg" type="audio/ogg">
+	  <source src="sealaudio1.mp3" type="audio/mpeg">
+	  </audio>
+
+	  </div>
+
+	  <div id="seal">
+			<div id="sealclick1" onclick="next4('sealclick1')"></div>
+			<div id="sealclick2" onclick="next5('sealclick2')"></div>
+			<div id="sealclick3"onclick="gotokookaburra('sealclick3')"></div>
+			<div id="seal1">It’s time to get wet, she headed to the seal show
+			<p>Front row seat where the water was just a feet away or so. </div>
+			<div id="seal2">Sally the Seal put her best flipper forward.
+			<p>	If she did her tricks well she’ll be given a reward. </div>
+			<div id="seal3">She slid, she dove and even went through an arc.
+			<p>	At the end of the show she said thank you with a long BARK!</div>
+
+		
+	  	<audio id="sealaudio2" controls>
+	  <source src="sealaudio2.ogg" type="audio/ogg">
+	  <source src="sealaudio2.mp3" type="audio/mpeg">
+	  </audio>
+
+	  	<audio id="sealaudio3" controls>
+	  <source src="sealaudio3.ogg" type="audio/ogg">
+	  <source src="sealaudio3.mp3" type="audio/mpeg">
+	  </audio>
+
+	  <audio id="kookaburraaudio1" controls>
+	  <source src="kookaburraaudio1.ogg" type="audio/ogg">
+	  <source src="kookaburraaudio1.mp3" type="audio/mpeg">
+	  </audio>
+
+	
+		</div>
+			<div id="kookaburra">
+			<div id="kookaburraclick1" ></div>
+			<div id="kookaburraclick2" ></div>
+			<div id="kookaburraclick3"onclick="next6('kookaburraclick3')"></div>
+			<div id="kookaburraclick5" onclick="next7('kookaburraclick5')"></div>
+			<div id="kookaburraclick4" onclick="gotoalpacca('kookaburraclick4')"></div>
+			<div id="kookaburra1">One thing that’s a must see in Sydney, <p>
+					Is a native Kookaburra who LAUGHS really funny. </div>
+			<div id="kookaburra2">Tell a joke and they’ll be at it for hours. <p>
+						Avery told them the one about the green flowers.</div>
+			<div id="kookaburra3">They thought it was hilarious, couldn’t stop their laughter. <p> Even some of the passerby joined in the chatter. </div>
+
+		
+	  	<audio id="kookaburraaudio2" controls>
+	  <source src="kookaburraaudio2.ogg" type="audio/ogg">
+	  <source src="kookaburraaudio2.mp3" type="audio/mpeg">
+	  </audio>
+
+	  	<audio id="kookaburraaudio3" controls>
+	  <source src="kookaburraaudio3.ogg" type="audio/ogg">
+	  <source src="kookaburraaudio3.mp3" type="audio/mpeg">
+	  </audio>
+
+	  <audio id="alpaccaaudio1" controls>
+	  <source src="alpaccaaudio1.ogg" type="audio/ogg">
+	  <source src="alpaccaaudio1.mp3" type="audio/mpeg">
+	  </audio>
+
+	  </div>
+
+		<div id="alpacca">
+			<div id="alpaccaclick1" onclick="next8('alpaccaclick1')"></div>
+			<div id="alpaccaclick2" onclick="next9('alpaccaclick2')"></div>
+			<div id="alpaccaclick3"onclick="gotohome('alpaccaclick3')"></div>
+			<div id="alpacca1">Last but not the least was the Petting Zoo.
+				<p> The trip was nearing to an end, Avery was sad too.</div>
+			<div id="alpacca2">Long legs, long ears and a long neck.
+			<p> White fluffy fur she went for a hug and gave it a peck!</div>
+			<div id="alpacca3">The Alpaca HUMMED and she fell in love right away.
+				<p> They took a picture to forever remember this day.</div>
+
+		
+	  	<audio id="alpaccaaudio2" controls>
+	  <source src="alpaccaaudio2.ogg" type="audio/ogg">
+	  <source src="alpaccaaudio2.mp3" type="audio/mpeg">
+	  </audio>
+
+	  	<audio id="alpaccaaudio3" controls>
+	  <source src="alpaccaaudio3.ogg" type="audio/ogg">
+	  <source src="alpaccaaudio3.mp3" type="audio/mpeg">
+	  </audio>
+
+		
+		</div>
+			
+
+</body>
+</html>
+<script type="text/javascript">
+
+	function start(x) {
+		document.getElementById('home').style.left = '-1630px';
+		document.getElementById('elephant').style.left = '-230px';
+		document.getElementById('tiger').style.left = '1326px';
+
+
+
+		var y = document.getElementById("elephantaudio1"); 
+	if (x=='startbutton') {y.play();}
+	if (x=='elephantclick1') {y.pause();}	
+
+
+
+	}
+
+	function next(x) {
+		document.getElementById('elephantclick1').style.display = 'none';
+		document.getElementById('elephant1').style.display = 'none';
+		document.getElementById('elephantclick2').style.display = 'block';
+		document.getElementById('elephant2').style.display = 'block';
+
+		var y = document.getElementById("elephantaudio1"); 
+	if (x=='startbutton') {y.play();}
+	if (x=='elephantclick1') {y.pause();}	
+
+		var y = document.getElementById("elephantaudio2"); 
+	if (x=='elephantclick1') {y.play();}
+	if (x=='elephantclick2') {y.pause();}	
+		
+}
+		function next1(x) {
+		document.getElementById('elephantclick2').style.display = 'none';
+		document.getElementById('elephant2').style.display = 'none';
+		document.getElementById('elephantclick3').style.display = 'block';
+		document.getElementById('elephant3').style.display = 'block';
+
+		var y = document.getElementById("elephantaudio2"); 
+	if (x=='elephantclick1') {y.play();}
+	if (x=='elephantclick2') {y.pause();}	
+
+		var y = document.getElementById("elephantaudio3"); 
+	if (x=='elephantclick2') {y.play();}
+	if (x=='elephantclick3') {y.pause();}	
+	}
+
+	function gototiger(x) {
+		document.getElementById('elephant').style.left = '-2940px';
+		document.getElementById('tiger').style.left = '-1400px';
+		document.getElementById('seal').style.left = '1400px';
+		
+
+
+				var y = document.getElementById("elephantaudio3"); 
+	if (x=='elephantclick2') {y.play();}
+	if (x=='elephantclick3') {y.pause();}	
+
+		var y = document.getElementById("tigeraudio1"); 
+	if (x=='elephantclick3') {y.play();}
+	if (x=='tigerclick2') {y.pause();}	
+
+	}
+	function next2(x) {
+		document.getElementById('tiger1').style.display = 'none';
+		document.getElementById('tigerclick1').style.display = 'none';
+		document.getElementById('tigerclick5').style.display = 'block';
+		document.getElementById('tiger2').style.display = 'block';
+
+
+		var y = document.getElementById("tigeraudio1"); 
+	if (x=='elephantclick3') {y.play();}
+	if (x=='tigerclick1') {y.pause();}		
+
+		var y = document.getElementById("tigeraudio2"); 
+	if (x=='tigerclick1') {y.play();}
+	if (x=='tigerclick5') {y.pause();}	
+		
+}
+		function next3(x) {
+		document.getElementById('tigerclick5').style.display = 'none';
+		document.getElementById('tigerclick2').style.display = 'none';
+		document.getElementById('tiger2').style.display = 'none';
+		document.getElementById('tigerclick4').style.display = 'block';
+		document.getElementById('tigerclick3').style.display = 'block';
+		document.getElementById('tiger3').style.display = 'block';
+
+		var y = document.getElementById("tigeraudio2"); 
+	if (x=='tigerclick1') {y.play();}
+	if (x=='tigerclick5') {y.pause();}	
+
+		var y = document.getElementById("tigeraudio3"); 
+	if (x=='tigerclick5') {y.play();}
+	if (x=='tigerclick4') {y.pause();}	
+
+
+	}
+
+	function gotoseal(x) {
+		document.getElementById('tiger').style.left = '-3050px';
+		document.getElementById('seal').style.left = '-255px';
+	
+
+
+			var y = document.getElementById("tigeraudio3"); 
+	if (x=='tigerclick5') {y.play();}
+	if (x=='tigerclick4') {y.pause();}	
+
+		var y = document.getElementById("sealaudio1"); 
+	if (x=='tigerclick4') {y.play();}
+	if (x=='sealclick1') {y.pause();}	
+
+
+	}
+
+	function next4(x) {
+		document.getElementById('sealclick1').style.display = 'none';
+		document.getElementById('seal1').style.display = 'none';
+		document.getElementById('sealclick2').style.display = 'block';
+		document.getElementById('seal2').style.display = 'block';
+
+	var y = document.getElementById("sealaudio1"); 
+	if (x=='tigerclick4') {y.play();}
+	if (x=='sealclick1') {y.pause();}	
+
+		var y = document.getElementById("sealaudio2"); 
+	if (x=='sealclick1') {y.play();}
+	if (x=='sealclick2') {y.pause();}	
+		
+}
+		function next5(x) {
+		document.getElementById('sealclick2').style.display = 'none';
+		document.getElementById('seal2').style.display = 'none';
+		document.getElementById('sealclick3').style.display = 'block';
+		document.getElementById('seal3').style.display = 'block';
+
+		var y = document.getElementById("sealaudio2"); 
+	if (x=='sealclick1') {y.play();}
+	if (x=='sealclick2') {y.pause();}	
+
+		var y = document.getElementById("sealaudio3"); 
+	if (x=='sealclick2') {y.play();}
+	if (x=='sealclick3') {y.pause();}	
+	}
+
+	function gotokookaburra(x) {
+		document.getElementById('seal').style.left = '-1885px';
+		document.getElementById('kookaburra').style.left = '-249px';
+	
+
+	var y = document.getElementById("sealaudio3"); 
+	if (x=='sealclick2') {y.play();}
+	if (x=='sealclick3') {y.pause();}	
+
+		var y = document.getElementById("kookaburraaudio1"); 
+	if (x=='sealclick3') {y.play();}
+	if (x=='kookaburraaudio1') {y.pause();}	
+
+
+	}
+
+	function next6(x) {
+		document.getElementById('kookaburraclick3').style.display = 'none';
+		document.getElementById('kookaburraclick1').style.display = 'none';
+		document.getElementById('kookaburra1').style.display = 'none';
+		document.getElementById('kookaburraclick5').style.display = 'block';
+		document.getElementById('kookaburraclick2').style.display = 'block';
+		document.getElementById('kookaburra2').style.display = 'block';
+
+	var y = document.getElementById("kookaburraaudio1"); 
+	if (x=='sealclick3') {y.play();}
+	if (x=='kookaburraclick3') {y.pause();}	
+
+		var y = document.getElementById("kookaburraaudio2"); 
+	if (x=='kookaburraclick3') {y.play();}
+	if (x=='kookaburraclick5') {y.pause();}
+}
+		function next7(x) {
+		document.getElementById('kookaburraclick5').style.display = 'none';
+		document.getElementById('kookaburraclick2').style.display = 'none';
+		document.getElementById('kookaburra2').style.display = 'none';
+		document.getElementById('kookaburraclick4').style.display = 'block';
+		document.getElementById('kookaburra3').style.display = 'block';
+		document.getElementById('kookaburraclick1').style.display = 'block';
+
+			var y = document.getElementById("kookaburraaudio2"); 
+	if (x=='kookaburraclick3') {y.play();}
+	if (x=='kookaburraclick5') {y.pause();}
+
+		var y = document.getElementById("kookaburraaudio3"); 
+	if (x=='kookaburraclick5') {y.play();}
+	if (x=='kookaburraclick4') {y.pause();}	
+	}
+
+	function gotoalpacca(x) {
+		document.getElementById('kookaburra').style.left = '-2000px';
+		document.getElementById('alpacca').style.left = '-190px';
+	
+
+
+		var y = document.getElementById("kookaburraaudio3"); 
+	if (x=='kookaburraclick5') {y.play();}
+	if (x=='kookaburraclick4') {y.pause();}	
+
+		var y = document.getElementById("alpaccaaudio1"); 
+	if (x=='kookaburraclick4') {y.play();}
+	if (x=='alpaccaclick1') {y.pause();}	
+
+
+	}
+
+	function next8(x) {
+		document.getElementById('alpaccaclick1').style.display = 'none';
+		document.getElementById('alpacca1').style.display = 'none';
+		document.getElementById('alpaccaclick2').style.display = 'block';
+		document.getElementById('alpacca2').style.display = 'block';
+
+	var y = document.getElementById("alpaccaaudio1"); 
+	if (x=='kookaburraclick4') {y.play();}
+	if (x=='alpaccaclick1') {y.pause();}	
+
+		var y = document.getElementById("alpaccaaudio2"); 
+	if (x=='alpaccaclick1') {y.play();}
+	if (x=='alpaccaclick2') {y.pause();}	
+		
+}
+		function next9(x) {
+		document.getElementById('alpacca2').style.display = 'none';
+		document.getElementById('alpaccaclick3').style.display = 'block';
+		document.getElementById('alpacca3').style.display = 'block';
+
+		var y = document.getElementById("alpaccaaudio2"); 
+	if (x=='alpaccaclick1') {y.play();}
+	if (x=='alpaccaclick2') {y.pause();}	
+
+		var y = document.getElementById("alpaccaaudio3"); 
+	if (x=='alpaccaclick2') {y.play();}
+	if (x=='alpaccaclick3') {y.pause();}	
+	}
+
+	function gotohome(x) {
+		document.getElementById('alpacca').style.left = '-1400px';
+		document.getElementById('home').style.left = '0px';
+
+	}
+</script>
